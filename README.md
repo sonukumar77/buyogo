@@ -19,7 +19,7 @@ Welcome to the App ! This is React Js application allows users to Sigin and Sign
 - `Signup/Register`: This allows users to signup into the app.
 - `UI Enhancements`:Using multistep form this makes user happy to fill the form by entering with chuncks of data instead of filling/showing a large input field once.The app includes 
                     custom components like Success and Failure.
-- `Automatic Redirection`:User can redirect after successfull signup without any action perform like button click after a set duration (e.g., 3 seconds).
+- `Automatic Redirection`: User can redirect after successfull signup without any action perform like button click after a set duration (e.g., 3 seconds).
 - `Manual Navigation Controls`: Users can manually navigate between components.Also can navigate forward and back direction using next and back button controls.
 - `Input Field Validation`: Validation is implement while user enter mobile number,password,pincode etc.
 - `Responsiveness`: App is fully responsive user friendly and mobile compatiable.
