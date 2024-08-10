@@ -5,6 +5,7 @@ import { useDispatch } from "react-redux";
 import { registerUserAction } from "../../redux/actions/userAction.js";
 import { useNavigate } from "react-router-dom";
 import BackArrowIcon from "../icons/BackArrowIcon.tsx";
+import ProgressBar from "../base/ProgressBar.tsx";
 
 const Signup = ({ userInfo, handleInput, setSuccessMessage }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -58,9 +59,14 @@ const Signup = ({ userInfo, handleInput, setSuccessMessage }) => {
           <span>Go Back</span>
         </div>
       ) : null}
+
       {currentIndex < componentList.length ? (
         <h1 className="font-medium text-xl">Create Account</h1>
       ) : null}
+
+      <div className="w-full flex gap-1">
+        {componentList.map((_, i) => <ProgressBar key={i} isFilled={i <= currentIndex} />)}
+      </div>
 
       {componentList[currentIndex].children}
       {currentIndex < componentList.length ? (
